@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Tecnica</title>
+    <link type="text/css" rel="stylesheet" href="src/style.css"/>
+</head>
+<body>
+    <div id="container">
+        <h2>Calculadora</h2>
+        <form name="calculator" id="calculator" autocomplete="off">
+            <span id="screen-text"></span>
+            <input id="screen" type="text" readonly name="res" value="" >
+
+            <input type="button" value="√" onclick="addNumber('√')">
+            <button type="button" onclick="addNumber('^')">^</button>
+            <br>
+
+            <input type="button" value="7" onclick="addNumber(this.value, 1)">
+            <input type="button" value="8" onclick="addNumber(this.value, 1)">
+            <input type="button" value="9" onclick="addNumber(this.value, 1)">
+            <input type="button" value="/" onclick="addNumber(this.value)">
+            <br>
+
+            <input type="button" value="4" onclick="addNumber(this.value, 1)">
+            <input type="button" value="5" onclick="addNumber(this.value, 1)">
+            <input type="button" value="6" onclick="addNumber(this.value, 1)">
+            <input type="button" value="*" onclick="addNumber(this.value)">
+            <br>
+
+            <input type="button" value="1" onclick="addNumber(this.value, 1)">
+            <input type="button" value="2" onclick="addNumber(this.value, 1)">
+            <input type="button" value="3" onclick="addNumber(this.value, 1)">
+            <input type="button" value="-" onclick="addNumber(this.value)">
+            <br>
+
+            <input type="button" value="0" onclick="addNumber(this.value, 1)">
+            <input type="button" value="C" onclick="resetForm()">
+            <input type="button" value="=" onclick="result()">
+            <input type="button" value="+" onclick="addNumber(this.value)">
+
+        </form>
+    </div>
+
+    <div id="container2">
+        <h2>Descuento</h2>
+        <span id="screen-number"></span>
+        <input type="number" id="numberDesc">
+        <input type="button" value="Agregar" class="button-add" onclick="addNumberA()")></input>
+        <br>
+        <input type="button" value="Calcular" class="button-add" onclick="resultArray()"></input>
+        <input type="button" value="Limpiar" class="button-add" onclick="clearArray()"></input>
+        <br>
+        <p id="screen-desc" style="padding: 5px;"></p>
+
+    </div>
+    <script src="src/app.js"></script>
+</body>
+</html>

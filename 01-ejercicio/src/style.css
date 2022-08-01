@@ -1,0 +1,63 @@
+#container{
+    width: 250px;
+    height: 350px;
+    background-color: rgb(138, 198, 255);
+}
+
+#container2{
+    width: 250px;
+    height: 350px;
+    background-color: rgb(132, 249, 106);
+}
+
+
+input[type=button],input[type=reset],  button
+{
+width: 50px;
+background-color: white;
+border: none;
+color: black;
+font-weight: bold;
+padding: 6px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 4px;
+cursor: pointer;
+box-shadow: 1px 1px 1px black;
+}
+
+input[type="text"]{
+color: black;
+padding: 15px 32;
+text-align: right;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+width: 95%;
+}
+
+span{
+width: 95%;
+display: flex;
+justify-content: end;
+}
+
+
+
+table 
+{
+background-color: #E4E7EA;
+padding: 5px 5px;
+}
+
+.button-add{
+width: 60px !important;
+
+padding:0 !important;
+font-size: 15px !important;
+
+}

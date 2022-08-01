@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>02 Prueba front</title>
+</head>
+
+<body>
+
+    <div class="container row">
+        <div class="col-6">
+            <h5>Estudiante</h5>
+            <div  id="msg1" style="display: none;" class="alert alert-primary">Estudiante agregado</div>
+            <form method="post" id="fomr-stu">
+                <input type="text" name="name" id="name" placeholder="ingrese nombre" class="form-control mb-2">
+                <input type="number" name="age" id="age" placeholder="ingrese edad" class=" form-control mb-2" >
+                <input type="submit" value="Agregar" class="btn btn-success">
+                <input type="button" value="Listar" onclick="listStudents()" class="btn btn-primary">
+
+            </form>
+
+            <br><br>
+            <div id="showStudent"></div>
+            <br>
+
+
+        </div>
+        <div class="col-6">
+            <h5>Clases</h5>
+            <div  id="msg2" style="display: none;" class="alert alert-primary">Clase agregada</div>
+            <form method="post" id="fomr-class">
+                <input type="text" name="classname" id="classname" placeholder="ingrese nombre de la clase" class="form-control mb-2">
+                <input type="number" name="order" id="order" placeholder="ingrese orden" class="form-control mb-2">
+               
+                <div id="list1" class="dropdown-check-list" tabindex="100">
+                    <span class="anchor">Selecciona Estudiante(s)</span>
+                    <ul class="items" id="ul-student">
+                        <li><input type="checkbox" name="checkbox" id='checkbox1' />Maria </li>
+                        <li><input type="checkbox" name="checkbox" id='checkbox2'/>Gabriel </li>
+                        <li><input type="checkbox" name="checkbox" id='checkbox3'/>Carmen  </li>
+                    </ul>
+                  </div>
+                       <br>        
+                <input type="submit" value="Agregar" class="btn btn-success mt-2">
+                <input type="button" value="Listar" onclick="listClass()" class="btn btn-primary mt-2">
+
+            </form>
+
+            <br><br>
+            <div id="showClass"></div>
+        </div>
+    </div>
+
+<script src="src/app.js"></script>
+</body>
+
+</html>
